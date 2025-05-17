@@ -8,18 +8,57 @@
         body {
             background-color: #D4C9B4;
             color: #3D6B4C;
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
         h1 {
+            font-weight: 300;
+            font-size: 2.8rem;
             text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .nav {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(61, 107, 76, 0.2);
+        }
+        
+        .nav a {
+            color: #3D6B4C;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+        
+        .nav a:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <h1>用戶需知</h1>
-    <p>這裡是用戶需知的內容。</p>
-    <a href="index.html">首頁</a> | <a href="contact.html">聯絡我們</a>
+    <div class="container">
+        <h1>用戶需知</h1>
+        <p>這裡是用戶需知的內容。</p>
+        <div class="nav">
+            <a href="index.html">首頁</a> | <a href="contact.html">聯絡我們</a>
+        </div>
+    </div>
 </body>
 </html>
